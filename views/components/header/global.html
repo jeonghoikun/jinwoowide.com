@@ -1,0 +1,21 @@
+<header class="container mx-auto py-6 px-2">
+	<div>
+		<a class="block w-fit mx-auto flex space-x-1 hover:underline" href="/">
+			<img class="block w-8" src="/static/img/site/logo/96.png" alt="{{.Site.Config.Title}} 로고">
+			<div class="flex items-center">
+				<span class="text-stone-100 font-semibold text-lg">{{.Site.Config.Title}}</span>
+			</div>
+		</a>
+	</div>
+	<div class="mt-3">
+		<nav>
+			<ul class="w-fit mx-auto space-x-3 space-y-3 text-center text-sm font-semibold border border-stone-700 rounded-md px-3 pb-3 bg-stone-900">
+				{{range .Site.Store.Categories}}
+				<li class="inline-block">
+					<a class="hover:underline" href="/category/서울/강남구/{{.Name}}">{{.Name}}({{len .Stores}})</a>
+				</li>
+				{{end}}
+			</ul>
+		</nav>
+	</div>
+</header>

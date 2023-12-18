@@ -1,0 +1,45 @@
+<footer class="border-t border-stone-500 my-20">
+	<div class="container mx-auto py-6 px-2 mt-6">
+		<ul class="space-y-6 sm:space-y-0 sm:gap-6 text-sm sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
+			{{range .Site.Store.Categories}}
+			<li class="space-y-3">
+				<div class="text-stone-200 font-semibold">
+					<a class="hover:underline" href="/category/서울/강남구/{{.Name}}">{{.Name}}({{len .Stores}})</a>
+				</div>
+				{{range .Stores}}
+				<div>
+					<a class="hover:underline" href="/store/{{.Location.Do}}/{{.Location.Si}}/{{.Location.Dong}}/{{.Type}}/{{.Title}}">{{.Title}}</a>
+				</div>
+				{{end}}
+			</li>
+			{{end}}
+		</ul>
+	</div>
+	<div class="container mx-auto space-y-6 py-6 px-2">
+		<div>
+			<div>
+				<a class="block w-fit flex space-x-1 hover:underline" href="/">
+					<img class="block w-6" src="/static/img/site/logo/96.png" alt="{{.Site.Config.Title}} 로고">
+					<div class="flex items-center">
+						<span class="text-stone-100 font-semibold">{{.Site.Config.Title}}</span>
+					</div>
+				</a>
+			</div>
+			<div class="mt-3 text-sm space-y-3">
+				<div>
+					<span class="inline-block font-semibold w-[55px] mr-1">Author</span>
+					<span>{{.Site.Config.Author}}</span>
+				</div>
+				<div>
+					<span class="inline-block font-semibold w-[55px] mr-1">Contact</span>
+					<a class="hover:underline" href="tel:{{.Site.Config.PhoneNumber}}">{{.Site.Config.PhoneNumber}}</a>
+				</div>
+				<div>
+					<span class="inline-block font-semibold w-[55px] mr-1">Hosting</span>
+					<span>Asia/Seoul EC2 AWS(Amazon Web Service)</span>
+				</div>
+			</div>
+		</div>
+		<div class="text-sm text-stone-500 text-center">Copyright © {{Time.Format "2006"}} {{.Site.Config.Title}}. All rights reserved.</div>
+	</div>
+</footer>

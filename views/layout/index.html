@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	{{template "components/head/browser"}}
+	{{template "components/head/seo" .}}
+	{{template "components/head/styles"}}
+	{{template "components/head/scripts"}}
+</head>
+<body class="antialiased bg-black text-stone-300">
+	{{template "components/header/global" .}}
+	{{template "components/aside/profile" .}}
+	<main class="container mx-auto">{{embed}}</main>
+	{{template "components/footer/global" .}}
+</body>
+</html>

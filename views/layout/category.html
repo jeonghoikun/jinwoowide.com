@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	{{template "components/head/browser"}}
+	{{template "components/head/seo" .}}
+	{{template "components/head/styles"}}
+	{{template "components/head/scripts"}}
+</head>
+<body class="antialiased bg-black text-stone-300">
+	{{template "components/header/global" .}}
+	{{template "components/aside/profile" .}}
+	<div class="container mx-auto mt-10 px-2">
+		<div class="border border-stone-600 rounded-md p-3 text-stone-400 text-sm font-semibold space-x-1">
+			<a class="inline-block hover:text-stone-300" href="/">홈</a>
+			<span class="inline-block text-stone-600">/</span>
+			<span class="inline-block">{{.Breadcrumbs.StoreType}}</span>
+		</div>
+	</div>
+	<main class="container mx-auto">{{embed}}</main>
+	{{template "components/footer/global" .}}
+</body>
+</html>

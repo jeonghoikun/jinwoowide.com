@@ -1,0 +1,26 @@
+<div class="border border-stone-700 rounded-md shadow-lg shadow-black/50 brightness-90 hover:brightness-100 hover:scale-105 duration-300">
+	<a class="block" href="/store/{{.Location.Do}}/{{.Location.Si}}/{{.Location.Dong}}/{{.Type}}/{{.Title}}">
+		<img class="rounded-t-md block object-cover object-center w-full h-full" src="/static/img/store/{{.Location.Do}}/{{.Location.Si}}/{{.Location.Dong}}/{{.Type}}/{{.Title}}/thumbnail.png" alt="{{.Location.Do}} {{.Location.Si}} {{.Location.Dong}} {{.Type}} {{.Title}} 썸네일">
+		<div class="px-3 py-6">
+			<h3 class="text-stone-100 font-semibold">강남 {{.Title}} {{.Type}}</h3>
+			<div class="text-sm mt-3 space-y-3">
+				<div>
+					<span class="inline-block font-semibold text-stone-200">상태</span>
+					{{if .Active.IsPermanentClosed}}
+					<span class="inline-block text-red-400">폐업({{.Active.Reason}})</span>
+					{{else}}
+					<span class="inline-block text-blue-300">영업중</span>
+					{{end}}
+				</div>
+				<div>
+					<span class="inline-block font-semibold text-stone-200">주소</span>
+					<span class="inline-block">{{.Location.Do}} {{.Location.Si}} {{.Location.Dong}} {{.Location.Address}}</span>
+				</div>
+				<div>
+					<span class="inline-block font-semibold text-stone-200">등록</span>
+					<span class="inline-block">{{.DatePublished.Format "2006/01/02"}}</span>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>

@@ -1,0 +1,15 @@
+<section class="mt-10">
+	<div class="px-2 mt-6 mb-10 w-fit mx-auto text-center">
+		<h1 class="font-semibold text-stone-200 text-2xl">{{.Page.Title}}</h1>
+		<p class="mt-6 font-semibold">{{.Page.Description}}</p>
+	</div>
+	<div class="px-2">
+		<ul class="mt-6 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 space-y-3 sm:space-y-0 sm:gap-3">
+			{{range .Stores}}
+			<li>{{template "components/store/card" .}}</li>
+			{{else}}
+			<p>데이터가 없습니다</p>
+			{{end}}
+		</ul>
+	</div>
+</section>

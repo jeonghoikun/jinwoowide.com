@@ -1,0 +1,36 @@
+<section>
+	<lottie-player class="w-full max-w-[400px] mx-auto" src="https://assets8.lottiefiles.com/packages/lf20_rbtawnwz.json" background="transparent" speed="1" loop autoplay></lottie-player>
+	<div class="w-fit mx-auto px-6 text-stone-100 text-2xl">
+		<p>반가워요!</p>
+		<h1 class=font-extrabold>{{.Site.Config.Title}}</h1>
+	</div>
+	<lottie-player class="w-full max-w-[800px] mx-auto" src="https://lottie.host/208279ee-75d3-4f09-8465-bfcf23f0e991/xfPtd7Z8hI.json" background="transparent" speed="1" loop autoplay></lottie-player>
+	<p class="block mx-auto w-fit text-stone-100 font-extrabold text-2xl px-6">강남지역 모든 풀싸롱 정보 검색</p>
+</section>
+<section class="mt-20">
+	<div class="space-y-20">
+		{{range .Site.Store.Categories}}
+		<div class="px-2">
+			<div class="text-yellow-300 hover:text-yellow-200 flex w-fit space-x-2">
+				<svg class="inline-block w-5" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+				   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+				   <path d="M3 21l18 0"></path>
+				   <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4"></path>
+				   <path d="M5 21l0 -10.15"></path>
+				   <path d="M19 21l0 -10.15"></path>
+				   <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4"></path>
+				</svg>
+				<a class="text-lg font-semibold" href="/category/서울/강남구/{{.Name}}">
+					<h2>{{.Name}}({{len .Stores}})</h2>
+				</a>
+				<span>»</span>
+			</div>
+			<ul class="mt-6 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 space-y-3 sm:space-y-0 sm:gap-3">
+				{{range .Stores}}
+				<li>{{template "components/store/card" .}}</li>
+				{{end}}
+			</ul>
+		</div>
+		{{end}}
+	</div>
+</section>

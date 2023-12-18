@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	{{template "components/head/browser"}}
+	{{template "components/head/seo" .}}
+	{{template "components/head/styles"}}
+	{{template "components/head/scripts"}}
+</head>
+<body class="antialiased bg-black text-stone-300">
+	{{template "components/header/global" .}}
+	{{template "components/aside/profile" .}}
+	<div class="container mx-auto mt-10 px-2">
+		<div class="border border-stone-600 rounded-md p-3 text-stone-400 text-sm font-semibold space-x-1">
+			<a class="inline-block hover:text-stone-300" href="/">홈</a>
+			<span class="inline-block text-stone-600">/</span>
+			<a class="inline-block hover:text-stone-300" href="/category/{{.Store.Location.Do}}/{{.Store.Location.Si}}/{{.Store.Type}}">{{.Store.Type}}</a>
+			<span class="inline-block text-stone-600">/</span>
+			<span class="inline-block">{{.Store.Title}}</span>
+		</div>
+	</div>
+	<main class="container mx-auto mt-10 space-y-10">
+		<section>
+			<div class="px-2">
+				<h1 class="text-2xl font-semibold text-stone-100">{{.Page.Title}}</h1>
+				<div class="mt-3 text-sm text-stone-500">발행: {{.Store.DatePublished.Format "2006/01/02"}}</div>
+				{{if .Store.IsModified}}
+				<div class="mt-1 text-sm text-stone-500">폐업: {{.Store.DateModified.Format "2006/01/02"}}</div>
+				{{end}}
+				<p class="mt-3 text-sm">{{.Page.Description}}</p>
+			</div>
+			<div class="mt-6 sm:px-2 relative">
+				<img class="object-cover object-center w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] brightness-50" src="/static/img/store/{{.Store.Location.Do}}/{{.Store.Location.Si}}/{{.Store.Location.Dong}}/{{.Store.Type}}/{{.Store.Title}}/thumbnail.png" alt="{{.Store.Location.Si}}/{{.Store.Location.Dong}}/{{.Store.Type}}/{{.Store.Title}} 썸네일">
+				<div class="absolute inset-0 flex items-center justify-center text-2xl font-semibold px-2">
+					<div class="backdrop-blur bg-black/20 px-2 py-3 rounded-md">
+						{{if .Store.Active.IsPermanentClosed}}
+						<div class="text-red-300">폐업({{.Store.Active.Reason}})</div>
+						{{else}}
+						<div class="text-blue-300">영업중</div>
+						{{end}}
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="px-2">
+				<div class="text-xl font-semibold text-stone-200">
+					<span>🔍</span>
+					<h2 class="inline-block">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 기본 정보</h2>
+				</div>
+				<div class="mt-3 py-10 shadow-sm shadow-black rounded-xl border border-stone-700/50">
+					<table class="table-auto border-collapse w-full border-y border-stone-500/60 text-sm">
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">상태</th>
+							{{if .Store.Active.IsPermanentClosed}}
+							<td class="px-3 bg-stone-800 text-red-300">폐업: {{.Store.Active.Reason}}</td>
+							{{else}}
+							<td class="px-3 bg-stone-800 text-blue-300">영업중</td>
+							{{end}}
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">도시</th>
+							<td class="px-3 bg-stone-800">{{.Store.Location.Do}}</td>
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">지역1</th>
+							<td class="px-3 bg-stone-800">{{.Store.Location.Si}}</td>
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">지역2</th>
+							<td class="px-3 bg-stone-800">{{.Store.Location.Dong}}</td>
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">지번</th>
+							<td class="px-3 bg-stone-800">{{.Store.Location.Address}}</td>
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">업종</th>
+							<td class="px-3 bg-stone-800">{{.Store.Type}}</td>
+						</tr>
+						<tr>
+							<th class="border-r border-stone-500/80 p-4">상호</th>
+							<td class="px-3 bg-stone-800">{{.Store.Title}}</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="px-2">
+				<div class="text-xl font-semibold text-stone-200">
+					<span>🎁</span>
+					<h2 class="inline-block">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 이벤트</h2>
+				</div>
+				<div class="mt-3 py-10 shadow-sm shadow-black rounded-xl border border-stone-700/50">
+					<table class="table-auto border-collapse w-full border-y border-stone-500/60 text-sm">
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">무료 픽업</th>
+							<td class="px-3 bg-stone-800">강남권에 계신 고객에 한해 고급승용차 무료픽업 서비스 지원</td>
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">무료 발렛파킹</th>
+							<td class="px-3 bg-stone-800">자가용 이용 고객에 한해 무료 발렛파킹 지원</td>
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">초저녁 주대할인</th>
+							<td class="px-3 bg-stone-800">저녁 9시이전 방문고객 주대할인 이벤트 (유선문의)</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="px-2">
+				<div class="text-xl font-semibold text-stone-200">
+					<span>⌚️</span>
+					<h2 class="inline-block">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 영업시간</h2>
+				</div>
+				<div class="mt-3 py-10 shadow-sm shadow-black rounded-xl border border-stone-700/50">
+					<table class="table-auto border-collapse w-full border-y border-stone-500/60 text-sm">
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">1부</th>
+							{{if .Store.Hour.Part1.Has}}
+							<td class="px-3 bg-stone-800">{{.Store.Hour.Part1.Open}}~{{.Store.Hour.Part1.Closed}}</td>
+							{{else}}
+							<td class="px-3 bg-stone-800">없음</td>
+							{{end}}
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">2부</th>
+							{{if .Store.Hour.Part2.Has}}
+							<td class="px-3 bg-stone-800">{{.Store.Hour.Part2.Open}}~{{.Store.Hour.Part2.Closed}}</td>
+							{{else}}
+							<td class="px-3 bg-stone-800">없음</td>
+							{{end}}
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="px-2">
+				<div class="text-xl font-semibold text-stone-200">
+					<span>🏷️</span>
+					<h2 class="inline-block">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 메뉴</h2>
+				</div>
+				<div class="mt-3 py-10 shadow-sm shadow-black rounded-xl border border-stone-700/50">
+					<table class="table-auto border-collapse w-full border-y border-stone-500/60 text-sm">
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">1부 주대(양주 세트)</th>
+							<td class="px-3 bg-stone-800">₩{{CommaByPrice .Store.Menu.Part1Whisky}}</td>
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">2부 주대(양주 세트)</th>
+							<td class="px-3 bg-stone-800">₩{{CommaByPrice .Store.Menu.Part2Whisky}}</td>
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">TC(아가씨 봉사료)</th>
+							<td class="px-3 bg-stone-800">₩{{CommaByPrice .Store.Menu.TC}}</td>
+						</tr>
+						<tr class="border-b border-stone-500/40">
+							<th class="border-r border-stone-500/80 p-4">RT(룸 차지)</th>
+							<td class="px-3 bg-stone-800">₩{{CommaByPrice .Store.Menu.RT}}</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="px-2">
+				<div class="text-xl font-semibold text-stone-200">
+					<span>💰</span>
+					<h2 class="inline-block">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 인원수 별 가격</h2>
+				</div>
+				{{if .Store.Hour.Part1.Has}}
+				<div class="mt-3">
+					<h3 class="text-lg font-semibold ml-3">1부 {{.Store.Hour.Part1.Open}}~{{.Store.Hour.Part1.Closed}}</h3>
+					{{$store := .Store}}
+					{{$numbers := ListNumbers 1 2 3 4}}
+					{{range $numbers}}
+					<div class="mt-3 py-10 shadow-sm shadow-black rounded-xl border border-stone-700/50">
+						<table class="table-auto border-collapse w-full border-y border-stone-500/60 text-sm">
+							<tr class="border-b border-stone-500/40">
+								<th class="border-r border-stone-500/80 p-4">인원수</th>
+								<td class="px-3 bg-stone-800 font-semibold text-stone-200">{{.}}인</td>
+							</tr>
+							<tr class="border-b border-stone-500/40">
+								<th class="border-r border-stone-500/80 p-4">입실 시간</th>
+								<td class="px-3 bg-stone-800">1부 ({{$store.Hour.Part1.Open}}~{{$store.Hour.Part1.Closed}})</td>
+							</tr>
+							<tr class="border-b border-stone-500/40">
+								<th class="border-r border-stone-500/80 p-4">주대</th>
+								<td class="px-3 bg-stone-800 text-stone-400">₩{{CommaByPrice $store.Menu.Part1Whisky}}</td>
+							</tr>
+							{{$tc := Multiply $store.Menu.TC .}}
+							<tr class="border-b border-stone-500/40">
+								<th class="border-r border-stone-500/80 p-4">TC</th>
+								<td class="px-3 bg-stone-800 text-stone-400">₩{{CommaByPrice $tc}}</td>
+							</tr>
+							<tr class="border-b border-stone-500/40">
+								<th class="border-r border-stone-500/80 p-4">RT</th>
+								<td class="px-3 bg-stone-800 text-stone-400">₩{{CommaByPrice $store.Menu.RT}}</td>
+							</tr>
+							<tr class="border-b border-stone-500/40">
+								<th class="border-r border-stone-500/80 p-4">금액 합계</th>
+								<td class="px-3 bg-stone-800 font-semibold text-yellow-200">₩{{CommaByPrice $store.Menu.Part1Whisky $tc $store.Menu.RT}}</td>
+							</tr>
+						</table>
+					</div>
+					{{end}}
+				</div>
+				{{end}}
+				{{if .Store.Hour.Part2.Has}}
+				<div class="mt-3">
+					<h3 class="text-lg font-semibold ml-3">2부 {{.Store.Hour.Part2.Open}}~{{.Store.Hour.Part2.Closed}}</h3>
+					{{$store := .Store}}
+					{{$numbers := ListNumbers 1 2 3 4}}
+					{{range $numbers}}
+					<div class="mt-3 py-10 shadow-sm shadow-black rounded-xl border border-stone-700/50">
+						<table class="table-auto border-collapse w-full border-y border-stone-500/60 text-sm">
+							<tr class="border-b border-stone-500/40">
+								<th class="border-r border-stone-500/80 p-4">인원수</th>
+								<td class="px-3 bg-stone-800 font-semibold text-stone-200">{{.}}인</td>
+							</tr>
+							<tr class="border-b border-stone-500/40">
+								<th class="border-r border-stone-500/80 p-4">입실 시간</th>
+								<td class="px-3 bg-stone-800">2부 ({{$store.Hour.Part2.Open}}~{{$store.Hour.Part2.Closed}})</td>
+							</tr>
+							<tr class="border-b border-stone-500/40">
+								<th class="border-r border-stone-500/80 p-4">주대</th>
+								<td class="px-3 bg-stone-800 text-stone-400">₩{{CommaByPrice $store.Menu.Part2Whisky}}</td>
+							</tr>
+							{{$tc := Multiply $store.Menu.TC .}}
+							<tr class="border-b border-stone-500/40">
+								<th class="border-r border-stone-500/80 p-4">TC</th>
+								<td class="px-3 bg-stone-800 text-stone-400">₩{{CommaByPrice $tc}}</td>
+							</tr>
+							<tr class="border-b border-stone-500/40">
+								<th class="border-r border-stone-500/80 p-4">RT</th>
+								<td class="px-3 bg-stone-800 text-stone-400">₩{{CommaByPrice $store.Menu.RT}}</td>
+							</tr>
+							<tr class="border-b border-stone-500/40">
+								<th class="border-r border-stone-500/80 p-4">금액 합계</th>
+								<td class="px-3 bg-stone-800 font-semibold text-yellow-200">₩{{CommaByPrice $store.Menu.Part2Whisky $tc $store.Menu.RT}}</td>
+							</tr>
+						</table>
+					</div>
+					{{end}}
+				</div>
+				{{end}}
+			</div>
+		</section>
+		<section>
+			<div class="px-2">
+				<div class="text-xl font-semibold text-stone-200">
+					<span>📌</span>
+					<h2 class="inline-block">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 오시는 길</h2>
+				</div>
+				<p class="mt-3">{{.Store.Location.Do}} {{.Store.Location.Si}} {{.Store.Location.Dong}} {{.Store.Location.Address}}</p>
+				<iframe class="w-full h-[300px] mx-auto mt-3" title="map" frameborder="0" marginheight="0" marginwidth="0" scrolling="no" src="{{.Store.Location.GoogleMapSrc}}" style="filter: grayscale(0.1) contrast(1) opacity(0.9);"></iframe>
+			</div>
+		</section>
+		<section>
+			<div class="px-2">
+				<div class="text-xl font-semibold text-stone-200">
+					<span>🎆</span>
+					<h2 class="inline-block">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 이미지</h2>
+				</div>
+				<p class="mt-3">{{.Store.Title}} 전경 및 내부 사진</p>
+				<div class="mt-3 space-y-3 sm:space-y-0 sm:grid sm:grid-cols-2 gap-3">
+					{{$siMini := .SiMini}}
+					{{$store := .Store}}
+					{{range ListNumbers 1 2 3 4}}
+					<img src="/static/img/store/{{$store.Location.Do}}/{{$store.Location.Si}}/{{$store.Location.Dong}}/{{$store.Type}}/{{$store.Title}}/{{.}}.png" alt="{{$siMini}} {{$store.Title}} {{$store.Type}} 이미지 {{.}}">
+					{{end}}
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="px-2">
+				<div class="text-xl font-semibold text-stone-200">
+					<span>✍️</span>
+					<h2 class="inline-block">{{.SiMini}} {{.Store.Title}} {{.Store.Type}} 소개글</h2>
+				</div>
+				<article class="mt-3 space-y-3">{{embed}}</article>
+			</div>
+		</section>
+	</main>
+	<aside class="fixed bottom-0 right-0 mb-6 mr-3 container mx-auto w-fit">
+		<a class="block px-4 py-2 text-xs bg-yellow-400 rounded-md text-stone-900 font-semibold shadow-lg shadow-blck" href="tel:{{.Store.PhoneNumber}}">📞 {{.Store.Title}} 전화 연결</a>
+	</aside>
+	{{template "components/footer/global" .}}
+</body>
+</html>
