@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jeonghoikun/hamjayoung.com/site"
+	"github.com/jeonghoikun/gnfull.com/site"
 )
 
 const (

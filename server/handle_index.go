@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/jeonghoikun/hamjayoung.com/site"
-	"github.com/jeonghoikun/hamjayoung.com/store"
+	"github.com/jeonghoikun/gnfull.com/site"
+	"github.com/jeonghoikun/gnfull.com/store"
 )
 
 type indexHandler struct{}
