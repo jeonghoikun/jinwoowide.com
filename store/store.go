@@ -399,9 +399,9 @@ func initHighPublic() {
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
-		Menu:          &Menu{Part1Whisky: 350000, Part2Whisky: 160000, TC: 110000, RT: 50000},
+		Menu:          &Menu{Part1Whisky: 200000, Part2Whisky: 160000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2023, 12, 9),
-		DateModified:  storeDate(2023, 12, 9),
+		DateModified:  storeDate(2023, 12, 25),
 	})
 }
 
