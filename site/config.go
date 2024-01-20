@@ -42,9 +42,9 @@ func Init() {
 	k := Keywords([]string{"박아영의 강남풀싸롱 대모험", "박아영 실장", "강남 풀싸롱", "강남 미러룸", "강남 매직미러", "강남 야구장", "강남 하이퍼블릭", "강남 레깅스룸", "강남 쩜오", "강남 호빠", "강남 클럽", "강남 셔츠룸", "강남 가라오케"})
 	c.Keywords = &k
 	c.DatePublished = date(2023, 12, 18)
-	c.DateModified = date(2023, 12, 18)
+	c.DateModified = date(2024, 1, 20)
 	// 업종마다 전화번호가 다른경우 store/store.go 파일의 setPhoneNumber 함수에서 하드코딩
-	c.PhoneNumber = "010-8259-7110"
+	c.PhoneNumber = "010-7970-9057"
 	c.SearchEngineConnection = &searchEngineConnection{
 		Google: "VnHLGCnAiT6dJHiUdLJXFtgbUBeahGlL8-KBT_LCCx4",
 	}
