@@ -24,7 +24,7 @@
 				<h1 class="text-2xl font-semibold text-stone-100">{{.Page.Title}}</h1>
 				<div class="mt-3 text-sm text-stone-500">발행: {{.Store.DatePublished.Format "2006/01/02"}}</div>
 				{{if .Store.IsModified}}
-				<div class="mt-1 text-sm text-stone-500">폐업: {{.Store.DateModified.Format "2006/01/02"}}</div>
+				<div class="mt-1 text-sm text-stone-500">수정: {{.Store.DateModified.Format "2006/01/02"}}</div>
 				{{end}}
 				<p class="mt-3 text-sm">{{.Page.Description}}</p>
 			</div>
