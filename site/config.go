@@ -35,18 +35,18 @@ func date(year, month, day int) time.Time {
 func Init() {
 	c := &config{}
 	c.Port = uint32(80)
-	c.Domain = "gnfull.com"
-	c.Author = "박아영"
-	c.Title = "박아영의 강남풀싸롱 대모험"
-	c.Description = "박아영 실장이 소개하는 강남풀싸롱 정찰제 가격 및 시스템 안내. 풀싸롱, 미러룸, 매직미러, 야구장, 쩜오, 하이퍼블릭, 셔츠룸, 가라오케, 레깅스룸, 클럽, 호빠 등 강남의 모든 유흥업소 정보를 한눈에!"
-	k := Keywords([]string{"박아영의 강남풀싸롱 대모험", "박아영 실장", "강남 풀싸롱", "강남 미러룸", "강남 매직미러", "강남 야구장", "강남 하이퍼블릭", "강남 레깅스룸", "강남 쩜오", "강남 호빠", "강남 클럽", "강남 셔츠룸", "강남 가라오케"})
+	c.Domain = "woorifull.com"
+	c.Author = "박우리"
+	c.Title = "박우리의 강남풀싸롱 대탐험"
+	c.Description = "박우리 실장이 소개하는 강남풀싸롱 정보! 풀싸롱, 미러룸, 매직미러, 야구장, 쩜오, 하이퍼블릭, 셔츠룸, 가라오케, 레깅스룸, 클럽, 호빠 등 강남지역 모든 유흥 정보 검색"
+	k := Keywords([]string{"박우리", "강남풀싸롱", "풀싸롱", "미러룸", "매직미러", "야구장", "쩜오", "하이퍼블릭", "셔츠룸", "가라오케", "레깅스룸", "클럽", "호빠"})
 	c.Keywords = &k
-	c.DatePublished = date(2023, 12, 18)
-	c.DateModified = date(2024, 1, 28)
+	c.DatePublished = date(2024, 2, 2)
+	c.DateModified = date(2024, 2, 2)
 	// 업종마다 전화번호가 다른경우 store/store.go 파일의 setPhoneNumber 함수에서 하드코딩
 	c.PhoneNumber = "010-7970-9057"
 	c.SearchEngineConnection = &searchEngineConnection{
-		Google: "VnHLGCnAiT6dJHiUdLJXFtgbUBeahGlL8-KBT_LCCx4",
+		Google: "z24kLW0whZciFbbZZsg0FkW68ZbJDm3WSgRABdoljNE",
 	}
 	Config = c
 }

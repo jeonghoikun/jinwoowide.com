@@ -9,7 +9,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/compress"
 	"github.com/gofiber/template/html/v2"
-	"github.com/jeonghoikun/gnfull.com/site"
+	"github.com/jeonghoikun/woorifull.com/site"
 )
 
 type port uint32

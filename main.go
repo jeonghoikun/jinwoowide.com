@@ -4,9 +4,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/jeonghoikun/gnfull.com/server"
-	"github.com/jeonghoikun/gnfull.com/site"
-	"github.com/jeonghoikun/gnfull.com/store"
+	"github.com/jeonghoikun/woorifull.com/server"
+	"github.com/jeonghoikun/woorifull.com/site"
+	"github.com/jeonghoikun/woorifull.com/store"
 )
 
 func init() {

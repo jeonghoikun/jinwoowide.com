@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/jeonghoikun/gnfull.com/site"
-	"github.com/jeonghoikun/gnfull.com/store"
+	"github.com/jeonghoikun/woorifull.com/site"
+	"github.com/jeonghoikun/woorifull.com/store"
 )
 
 type storeHandler struct{}
