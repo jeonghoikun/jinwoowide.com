@@ -41,8 +41,8 @@ func Init() {
 	c.Description = "박우리 실장이 소개하는 강남풀싸롱 정보! 풀싸롱, 미러룸, 매직미러, 야구장, 쩜오, 하이퍼블릭, 셔츠룸, 가라오케, 레깅스룸, 클럽, 호빠 등 강남지역 모든 유흥 정보 검색"
 	k := Keywords([]string{"박우리", "강남풀싸롱", "풀싸롱", "미러룸", "매직미러", "야구장", "쩜오", "하이퍼블릭", "셔츠룸", "가라오케", "레깅스룸", "클럽", "호빠"})
 	c.Keywords = &k
-	c.DatePublished = date(2024, 2, 2)
-	c.DateModified = date(2024, 2, 2)
+	c.DatePublished = date(2024, 1, 10)
+	c.DateModified = date(2024, 1, 10)
 	// 업종마다 전화번호가 다른경우 store/store.go 파일의 setPhoneNumber 함수에서 하드코딩
 	c.PhoneNumber = "010-7970-9057"
 	c.SearchEngineConnection = &searchEngineConnection{
