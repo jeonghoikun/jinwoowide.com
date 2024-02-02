@@ -203,7 +203,7 @@ func initShirtRoom() {
 		},
 		Type:        STORE_TYPE_SHIRTROOM,
 		Title:       "디씨",
-		Description: "서울의 활기찬 밤문화의 중심, 강남 디씨 셔츠룸에서 독특한 한국 문화와 현대적인 럭셔리가 조화를 이루는 경험을 즐겨보세요. 개인적이고 첨단 기술이 갖춰진 방에서 마음껏 노래하고, 다양한 세대의 멜로디로 친목을 다지며, 고급 한국 요리에 흠뻑 빠져보세요. 강남의 역동적인 셔츠룸 문화에서 음악, 우정, 그리고 문화적 몰입의 잊지 못할 밤을 경험하세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -213,8 +213,8 @@ func initShirtRoom() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 160000, Part2Whisky: 130000, TC: 120000, RT: 50000},
-		DatePublished: storeDate(2023, 12, 1),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 10),
+		DateModified:  storeDate(2024, 1, 10),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -226,7 +226,7 @@ func initShirtRoom() {
 		},
 		Type:        STORE_TYPE_SHIRTROOM,
 		Title:       "유앤미",
-		Description: "강남 유앤미 셔츠룸에서 세련되고 편안한 분위기의 조화를 경험하세요. 독특한 스타일과 친밀한 환경에서 즐거운 시간을 보낼 수 있는 공간으로, 최신 음악과 다양한 엔터테인먼트를 제공합니다. 친구들과 함께하는 밤이든, 특별한 모임이든, 강남 유앤미 셔츠룸은 모든 순간을 더욱 특별하게 만들어 줄 것입니다.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -236,8 +236,8 @@ func initShirtRoom() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 160000, Part2Whisky: 130000, TC: 120000, RT: 50000},
-		DatePublished: storeDate(2023, 12, 2),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 10),
+		DateModified:  storeDate(2024, 1, 10),
 	})
 }
 
@@ -252,7 +252,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "달토",
-		Description: "강남 달토 하이퍼블릭에서 활기찬 밤문화와 독특한 엔터테인먼트를 경험하세요. 현대적인 인테리어와 분위기에서 최고의 음악과 함께하는 특별한 밤을 즐기실 수 있습니다. 강남의 중심에서 펼쳐지는 매혹적인 나이트라이프를 달토 하이퍼블릭에서 만나보세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -262,8 +262,8 @@ func initHighPublic() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
-		DatePublished: storeDate(2023, 12, 3),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 11),
+		DateModified:  storeDate(2024, 1, 11),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -275,7 +275,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "런닝래빗",
-		Description: "강남 런닝래빗 하이퍼블릭에서 독창적이고 역동적인 밤문화의 매력을 경험하세요. 최신 트렌드와 감각적인 음악이 어우러진 공간에서 친구들과 잊지 못할 추억을 만들어 보세요. 강남의 밤을 화려하게 수놓는 런닝래빗 하이퍼블릭에서 색다른 즐거움을 발견하실 수 있습니다.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -285,8 +285,8 @@ func initHighPublic() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
-		DatePublished: storeDate(2023, 12, 4),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 11),
+		DateModified:  storeDate(2024, 1, 11),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -298,7 +298,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "트렌드",
-		Description: "강남 트렌드 하이퍼블릭에서 최신 유행과 함께하는 화려한 밤문화를 체험하세요. 트렌디한 음악과 스타일리시한 분위기 속에서 즐거운 시간을 보낼 수 있는 이상적인 장소입니다. 강남의 밤을 색다르게 즐기고 싶다면 트렌드 하이퍼블릭이 정답입니다.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -308,8 +308,8 @@ func initHighPublic() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 110000, RT: 50000},
-		DatePublished: storeDate(2023, 12, 5),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 12),
+		DateModified:  storeDate(2024, 1, 12),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -321,7 +321,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "사라있네",
-		Description: "강남 사라있네 하이퍼블릭에서 독특하고 매력적인 밤문화의 세계로 빠져보세요. 현대적인 디자인과 함께하는 최고의 음악과 엔터테인먼트로 가득 찬 이 곳에서 잊지 못할 밤을 보내실 수 있습니다. 강남의 밤을 더욱 특별하게 만들어 줄 사라있네 하이퍼블릭을 경험해보세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -331,31 +331,8 @@ func initHighPublic() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
-		DatePublished: storeDate(2023, 12, 6),
-		DateModified:  storeDate(2024, 1, 28),
-	})
-	stores = append(stores, &Store{
-		Location: &Location{
-			Do:           "서울",
-			Si:           "강남구",
-			Dong:         "역삼동",
-			Address:      "822-5",
-			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3849794120856!2d127.02926860000001!3d37.4988373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca159d7d08f47%3A0x19ac7457d361928!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDthYztl6TrnoDroZwgMTEx!5e0!3m2!1sko!2skr!4v1661153125692!5m2!1sko!2skr",
-		},
-		Type:        STORE_TYPE_HIGHPUBLIC,
-		Title:       "메이커",
-		Description: "강남 메이커 하이퍼블릭에서 현대적인 스타일과 창의적인 분위기의 조화를 경험하세요. 도시의 중심에서 즐기는 최신 음악과 함께 독특한 엔터테인먼트의 세계로 여러분을 초대합니다. 강남의 밤을 새롭게 정의하는 메이커 하이퍼블릭에서 특별한 시간을 보내세요.",
-		Active: &Active{
-			IsPermanentClosed: false,
-			Reason:            "",
-		},
-		Hour: &Hour{
-			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
-			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
-		},
-		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 110000, RT: 50000},
-		DatePublished: storeDate(2023, 12, 7),
-		DateModified:  storeDate(2023, 12, 7),
+		DatePublished: storeDate(2024, 1, 12),
+		DateModified:  storeDate(2024, 1, 12),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -367,7 +344,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "수목원",
-		Description: "강남 수목원 하이퍼블릭에서 자연과 어우러진 독특한 밤문화를 즐겨보세요. 푸르른 자연 속에서 현대적인 음악과 엔터테인먼트가 조화를 이루는 이곳에서 특별한 경험을 하실 수 있습니다. 강남에서 자연과 문화가 만나는 수목원 하이퍼블릭으로 여러분을 초대합니다.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -377,8 +354,8 @@ func initHighPublic() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 250000, Part2Whisky: 0, TC: 130000, RT: 50000},
-		DatePublished: storeDate(2023, 12, 8),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 12),
+		DateModified:  storeDate(2024, 1, 12),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -390,7 +367,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "퍼펙트",
-		Description: "강남 퍼펙트 하이퍼블릭에서 완벽한 밤문화 경험을 하세요. 현대적인 감각과 최고급 서비스가 만나는 곳에서 멋진 음악과 함께하는 환상적인 밤을 보낼 수 있습니다. 강남의 매력적인 밤을 퍼펙트 하이퍼블릭과 함께 즐겨보세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -400,8 +377,8 @@ func initHighPublic() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 200000, Part2Whisky: 160000, TC: 120000, RT: 50000},
-		DatePublished: storeDate(2023, 12, 9),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 13),
+		DateModified:  storeDate(2024, 1, 13),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -413,7 +390,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "워라벨",
-		Description: "강남 워라벨 하이퍼블릭은 강남의 유흥주점으로 워라벨 콘셉트를 표방, 현대적인 디자인과 편안한 분위기에서 휴식과 즐거움을 제공합니다.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -423,8 +400,8 @@ func initHighPublic() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 250000, Part2Whisky: 0, TC: 130000, RT: 50000},
-		DatePublished: storeDate(2024, 1, 28),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 13),
+		DateModified:  storeDate(2024, 1, 13),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -436,7 +413,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "방탄",
-		Description: "강남 방탄 하이퍼블릭은 서울 강남구의 인기 유흥주점으로, 현대적인 분위기와 최첨단 음향 시스템을 갖춰 다양한 엔터테인먼트를 즐길 수 있는 공간입니다.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -446,8 +423,8 @@ func initHighPublic() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 250000, Part2Whisky: 0, TC: 130000, RT: 50000},
-		DatePublished: storeDate(2024, 1, 28),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 14),
+		DateModified:  storeDate(2024, 1, 14),
 	})
 }
 
@@ -462,7 +439,7 @@ func initLeggingsRoom() {
 		},
 		Type:        STORE_TYPE_LEGGINGS,
 		Title:       "하이킥",
-		Description: "강남 하이킥 레깅스룸에서 역동적이고 혁신적인 밤문화를 경험해보세요. 세련된 인테리어와 함께 최신 음악이 가득한 이곳에서 흥겨운 시간을 보낼 수 있습니다. 강남에서 색다른 즐거움을 찾는다면 하이킥 레깅스룸이 완벽한 선택입니다.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -472,8 +449,8 @@ func initLeggingsRoom() {
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
 		Menu:          &Menu{Part1Whisky: 250000, Part2Whisky: 0, TC: 150000, RT: 50000},
-		DatePublished: storeDate(2023, 12, 10),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 14),
+		DateModified:  storeDate(2024, 1, 14),
 	})
 }
 
@@ -488,7 +465,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "유니크",
-		Description: "강남 유니크 쩜오에서 개성 넘치는 밤문화의 진수를 경험해보세요. 독특한 테마와 함께하는 다채로운 엔터테인먼트가 여러분을 기다리고 있습니다. 강남에서만 느낄 수 있는 유니크한 매력과 함께 즐거운 밤을 보내세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -498,8 +475,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 12, 1),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 15),
+		DateModified:  storeDate(2024, 1, 15),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -511,7 +488,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "831",
-		Description: "강남 831 쩜오에서 독특하고 현대적인 밤문화를 체험하세요. 트렌디한 음악과 함께하는 매혹적인 분위기에서 즐겁고 흥미진진한 시간을 보낼 수 있습니다. 강남의 밤을 새롭게 정의하는 831 쩜오에서 특별한 경험을 해보세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -521,8 +498,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 12, 2),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 15),
+		DateModified:  storeDate(2024, 1, 15),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -534,7 +511,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "에이원",
-		Description: "강남 에이원 쩜오에서 현대적인 감각과 트렌디한 스타일이 만나는 독창적인 밤문화를 경험하세요. 최고의 음악과 엔터테인먼트가 어우러진 이곳에서 잊을 수 없는 밤을 보내실 수 있습니다. 강남의 밤을 새로운 시선으로 즐기고 싶다면 에이원이 제공하는 특별한 경험을 놓치지 마세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -544,8 +521,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 12, 3),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 15),
+		DateModified:  storeDate(2024, 1, 15),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -557,7 +534,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "미라클",
-		Description: "강남 미라클 쩜오에서 기적 같은 밤문화를 경험해보세요. 활기찬 음악과 함께하는 매혹적인 분위기에서 독특한 엔터테인먼트를 즐길 수 있습니다. 강남에서만 누릴 수 있는 미라클 쩜오의 특별한 밤을 체험하세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -567,8 +544,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 12, 4),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 16),
+		DateModified:  storeDate(2024, 1, 16),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -580,7 +557,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "오키도키",
-		Description: "강남 오키도키 쩜오에서 즐거움과 활기가 넘치는 밤문화를 만끽하세요. 현대적인 분위기와 트렌디한 음악이 조화를 이루는 공간에서 잊을 수 없는 밤을 보내실 수 있습니다. 강남의 밤을 즐겁고 신나게 만들어줄 오키도키 쩜오에서 특별한 경험을 해보세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -590,8 +567,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 12, 5),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 16),
+		DateModified:  storeDate(2024, 1, 16),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -603,7 +580,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "인트로",
-		Description: "강남 인트로 쩜오에서 시작되는 환상적인 밤문화를 경험하세요. 현대적인 스타일과 함께 트렌디한 음악이 이끄는 멋진 분위기에서 특별한 시간을 보내보세요. 강남의 밤을 새롭고 흥미로운 방식으로 시작하고 싶다면 인트로 쩜오가 완벽한 장소입니다.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -613,8 +590,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 12, 5),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 16),
+		DateModified:  storeDate(2024, 1, 16),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -626,7 +603,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "머니볼",
-		Description: "강남 머니볼 쩜오에서 화려하고 역동적인 밤문화를 체험하세요. 최신 트렌드를 반영한 음악과 스타일로 가득 찬 이곳에서 잊지 못할 밤을 보내실 수 있습니다. 강남에서 만날 수 있는 머니볼 쩜오의 특별한 매력을 경험해보세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -636,8 +613,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 12, 6),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 16),
+		DateModified:  storeDate(2024, 1, 16),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -649,7 +626,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "라이징",
-		Description: "강남 라이징 쩜오에서 역동적이고 신나는 밤문화의 정수를 체험해보세요. 현대적인 감각과 생동감 넘치는 음악이 만나는 곳에서 새로운 밤문화를 경험할 수 있습니다. 강남에서 특별한 밤을 원한다면 라이징 쩜오가 제공하는 활기찬 경험을 놓치지 마세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -659,8 +636,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 12, 7),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 17),
+		DateModified:  storeDate(2024, 1, 17),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -672,7 +649,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "임팩트",
-		Description: "강남 임팩트 쩜오에서 강렬하고 독특한 밤문화를 경험해보세요. 혁신적인 음악과 함께하는 역동적인 분위기 속에서 잊을 수 없는 밤을 보내실 수 있습니다. 강남에서 찾을 수 있는 임팩트 쩜오의 매력적인 경험을 놓치지 마세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -682,8 +659,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 12, 8),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 17),
+		DateModified:  storeDate(2024, 1, 17),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -695,7 +672,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "스테이",
-		Description: "강남 스테이 쩜오에서 편안하면서도 매력적인 밤문화를 즐겨보세요. 모던하고 아늑한 분위기에서 최신 음악과 함께 휴식과 즐거움을 동시에 경험할 수 있습니다. 강남의 밤을 잔잔하고 특별하게 만들어줄 스테이 쩜오에서 멋진 시간을 보내세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -705,8 +682,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 12, 9),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 17),
+		DateModified:  storeDate(2024, 1, 17),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -718,7 +695,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "킹스맨",
-		Description: "강남 킹스맨 쩜오는 고급스러운 서비스와 세련된 인테리어가 돋보이는 강남구의 유흥주점으로, 품격 있는 밤문화 경험을 제공합니다.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -728,8 +705,8 @@ func initDot5() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2024, 1, 28),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 18),
+		DateModified:  storeDate(2024, 1, 18),
 	})
 }
 
@@ -744,7 +721,7 @@ func initClub() {
 		},
 		Type:        STORE_TYPE_CLUB,
 		Title:       "사운드",
-		Description: "강남 사운드 클럽에서 최신 음악과 함께하는 고급스러운 밤문화를 경험해보세요. 화려한 조명과 최고 수준의 사운드 시스템이 조화를 이루는 이곳에서는 다양한 장르의 음악과 DJ 공연을 즐길 수 있습니다. 강남의 밤을 대표하는 이 클럽에서 특별한 날을 보내세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -754,8 +731,8 @@ func initClub() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 12, 10),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 19),
+		DateModified:  storeDate(2024, 1, 19),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -767,7 +744,7 @@ func initClub() {
 		},
 		Type:        STORE_TYPE_CLUB,
 		Title:       "레이스",
-		Description: "강남 레이스 클럽에서 화려하고 역동적인 밤문화를 경험하세요. 현대적인 사운드와 다채로운 음악 장르의 향연이 펼쳐지는 이곳에서 새로운 밤의 시작을 즐겨보세요. 강남의 중심에서 펼쳐지는 최고의 DJ 공연과 화려한 이벤트를 레이스 클럽에서 만나보세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -777,8 +754,8 @@ func initClub() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
-		DatePublished: storeDate(2023, 12, 11),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 19),
+		DateModified:  storeDate(2024, 1, 19),
 	})
 }
 
@@ -793,7 +770,7 @@ func initHobba() {
 		},
 		Type:        STORE_TYPE_HOBBA,
 		Title:       "어게인",
-		Description: "강남 어게인 호빠는 강남에서 인기 있는 호스트바 중 하나로, 여러 호스트바를 통합하여 새롭게 리뉴얼한 곳입니다. 이곳은 다양한 종류의 호빠 서비스를 제공하며, 주로 여성 고객을 대상으로 하는 정빠 서비스와 남성 및 여성 모두를 대상으로 하는 중빠, 준빠 서비스 등을 포함합니다.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -803,8 +780,8 @@ func initHobba() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 180000, Part2Whisky: 0, TC: 60000, RT: 50000},
-		DatePublished: storeDate(2023, 12, 12),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 20),
+		DateModified:  storeDate(2024, 1, 20),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -816,7 +793,7 @@ func initHobba() {
 		},
 		Type:        STORE_TYPE_HOBBA,
 		Title:       "씨엔엔",
-		Description: "강남 씨엔엔 호빠는 강남 지역에서 유명한 호스트바 중 하나로, 예술과 엔터테인먼트가 어우러진 독특한 경험을 제공하는 곳입니다. 씨엔엔 호빠의 위치는 서울 강남구 삼성동 143-27로, 쉽게 접근할 수 있는 곳에 위치해 있습니다. 이곳은 고급스러운 인테리어와 함께 다양한 종류의 주류 및 음식을 즐길 수 있는 곳 입니다.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -826,8 +803,8 @@ func initHobba() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 180000, Part2Whisky: 0, TC: 60000, RT: 50000},
-		DatePublished: storeDate(2023, 12, 13),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 20),
+		DateModified:  storeDate(2024, 1, 20),
 	})
 }
 
@@ -842,7 +819,7 @@ func initFull() {
 		},
 		Type:        STORE_TYPE_FULL,
 		Title:       "세븐",
-		Description: "강남 세븐 풀싸롱은 서울 강남구에 위치한 정통 룸시스템을 제공하는 소프트 풀싸롱입니다. 이곳은 다양한 최상급 미모의 여매니저들을 선택할 수 있는 룸초이스 방식을 채택하고 있으며, 비즈니스 미팅, 중요한 접대, 총각파티, 생일파티, 친목모임 등 다양한 자리에 적합합니다.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -852,8 +829,8 @@ func initFull() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 400000, RT: 0},
-		DatePublished: storeDate(2023, 12, 14),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 21),
+		DateModified:  storeDate(2024, 1, 21),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -865,7 +842,7 @@ func initFull() {
 		},
 		Type:        STORE_TYPE_FULL,
 		Title:       "심포니",
-		Description: "강남 심포니 풀싸롱에서 고급스러움과 세련됨이 어우러진 독특한 밤문화를 경험해보세요. 우아하고 편안한 분위기 속에서 프리미엄 서비스를 즐길 수 있는 이곳은 강남의 중심에서 품격 있는 여가 시간을 제공합니다. 최상의 매니저들과 함께하는 풍성한 선택의 폭, 개인화된 주문형 서비스로 각 고객의 취향을 만족시킬 준비가 되어 있습니다. 강남 심포니 풀싸롱은 여러분의 특별한 밤을 위한 완벽한 선택지입니다. 탁월한 호스피탈리티와 함께하는 최고급 경험을 강남 심포니 풀싸롱에서 만나보세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -875,8 +852,8 @@ func initFull() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 400000, RT: 0},
-		DatePublished: storeDate(2023, 12, 15),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 22),
+		DateModified:  storeDate(2024, 1, 22),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -888,7 +865,7 @@ func initFull() {
 		},
 		Type:        STORE_TYPE_FULL,
 		Title:       "애플",
-		Description: "강남 애플 풀싸롱에서 고급스러운 룸서비스와 매력적인 매니저들과의 만남을 경험하세요. 개인화된 서비스와 다양한 엔터테인먼트 옵션을 통해 강남의 밤문화를 새로운 차원에서 즐길 수 있습니다. 고객 맞춤형 경험을 제공하는 강남 애플 풀싸롱에서 화려한 밤을 보내세요.",
+		Description: "",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -898,8 +875,8 @@ func initFull() {
 			Part2: &TimeType{Has: false},
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 400000, RT: 0},
-		DatePublished: storeDate(2023, 12, 16),
-		DateModified:  storeDate(2024, 1, 28),
+		DatePublished: storeDate(2024, 1, 23),
+		DateModified:  storeDate(2024, 1, 23),
 	})
 }
 
