@@ -205,8 +205,8 @@ func initShirtRoom() {
 		Title:       "디씨",
 		Description: "강남 디씨 셔츠룸은 강남의 활기찬 유흥주점 중에서도 고급스러움과 프라이버시를 강조하는 곳으로 알려져 있으며, 비즈니스 미팅이나 친구들과의 사적인 모임에 이상적인 고급 서비스를 제공하여 각 방문객에게 맞춤형 즐거움을 선사합니다.",
 		Active: &Active{
-			IsPermanentClosed: false,
-			Reason:            "",
+			IsPermanentClosed: true,
+			Reason:            "정상폐업",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
@@ -214,7 +214,7 @@ func initShirtRoom() {
 		},
 		Menu:          &Menu{Part1Whisky: 160000, Part2Whisky: 130000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2024, 1, 10),
-		DateModified:  storeDate(2024, 1, 10),
+		DateModified:  storeDate(2024, 2, 15),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -238,6 +238,29 @@ func initShirtRoom() {
 		Menu:          &Menu{Part1Whisky: 160000, Part2Whisky: 130000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2024, 1, 10),
 		DateModified:  storeDate(2024, 1, 10),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "삼성동",
+			Address:      "143-27",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.0354982629583!2d127.0543849!3d37.5070809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca413c457ed95%3A0x2c8f79900d733d24!2s143-27%20Samseong-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1685329268008!5m2!1sen!2skr",
+		},
+		Type:        STORE_TYPE_SHIRTROOM,
+		Title:       "씨엔엔",
+		Description: "강남 씨엔엔 셔츠룸에서는 프리미엄 서비스와 고급스러운 분위기로 당신의 밤을 빛내줍니다. 맞춤형 케어와 독특한 경험으로 강남의 밤을 최고로 만들어 보세요.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "15:00"},
+			Part2: &TimeType{Has: false},
+		},
+		Menu:          &Menu{Part1Whisky: 180000, Part2Whisky: 0, TC: 60000, RT: 50000},
+		DatePublished: storeDate(2024, 2, 15),
+		DateModified:  storeDate(2024, 2, 15),
 	})
 }
 
@@ -795,8 +818,8 @@ func initHobba() {
 		Title:       "씨엔엔",
 		Description: "강남 씨엔엔 호빠는 현대적인 디자인과 프로페셔널한 서비스가 특징인 호스트 바로, 강남에서 고급스러운 호스팅 문화를 경험하고 싶은 방문객들에게 추천되는 장소입니다. 이곳에서는 다양한 음료와 함께 즐거운 대화를 나눌 수 있습니다.",
 		Active: &Active{
-			IsPermanentClosed: false,
-			Reason:            "",
+			IsPermanentClosed: true,
+			Reason:            "셔츠룸으로 업종 변경",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "15:00"},
@@ -804,7 +827,7 @@ func initHobba() {
 		},
 		Menu:          &Menu{Part1Whisky: 180000, Part2Whisky: 0, TC: 60000, RT: 50000},
 		DatePublished: storeDate(2024, 1, 20),
-		DateModified:  storeDate(2024, 1, 20),
+		DateModified:  storeDate(2024, 2, 15),
 	})
 }
 
