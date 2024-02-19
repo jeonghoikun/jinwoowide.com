@@ -171,24 +171,24 @@ func initKaraoke() {
 		Location: &Location{
 			Do:           "서울",
 			Si:           "강남구",
-			Dong:         "논현동",
-			Address:      "151-30",
-			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8479106529085!2d127.03145169999998!3d37.5115051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f05b7c4407%3A0xbb44e0b5425b8a89!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDrhbztmITrj5kgMTUxLTMw!5e0!3m2!1sko!2skr!4v1660745693771!5m2!1sko!2skr",
+			Dong:         "삼성동",
+			Address:      "142-35",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1043050533926!2d127.05085469999999!3d37.505458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca411d5a288d7%3A0xca6681460caa4840!2s411%20Teheran-ro%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1662046616801!5m2!1sen!2skr",
 		},
 		Type:        STORE_TYPE_KARAOKE,
-		Title:       "퍼펙트",
-		Description: "강남 퍼펙트 가라오케에서 최상의 음향 시스템과 다양한 노래 선택으로 당신의 노래 실력을 뽐내보세요. 편안하고 고품격한 분위기에서 친구들과 즐거운 노래 시간을 만끽해보세요. 강남 지역에서 가장 완벽한 가라오케 경험을 제공합니다.",
+		Title:       "파티원",
+		Description: "강남 파티원 가라오케는 최신 시설과 다양한 노래 선택으로 유흥을 찾는 방문객들에게 새로운 유형의 즐거움을 제공하는 것으로 유명하며, 강남의 밤문화를 새롭게 경험하고 싶은 이들에게 추천되는 장소입니다.",
 		Active: &Active{
-			IsPermanentClosed: true,
-			Reason:            "하이퍼블릭으로 업종 변경",
+			IsPermanentClosed: false,
+			Reason:            "",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
 			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
 		},
-		Menu:          &Menu{Part1Whisky: 350000, Part2Whisky: 160000, TC: 120000, RT: 50000},
-		DatePublished: storeDate(2023, 8, 12),
-		DateModified:  storeDate(2023, 8, 12),
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 150000, TC: 100000, RT: 50000},
+		DatePublished: storeDate(2024, 2, 18),
+		DateModified:  storeDate(2024, 2, 18),
 	})
 }
 
@@ -979,7 +979,7 @@ func createStaticImgDirectories() error {
 }
 
 func Init() error {
-	//initKaraoke()
+	initKaraoke()
 	initShirtRoom()
 	initHighPublic()
 	initLeggingsRoom()
