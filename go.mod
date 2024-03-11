@@ -1,4 +1,4 @@
-module github.com/jeonghoikun/woorifull.com
+module github.com/jeonghoikun/jinwoowide.com
 
 go 1.19
 
