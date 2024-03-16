@@ -177,7 +177,7 @@ func initKaraoke() {
 		},
 		Type:        STORE_TYPE_KARAOKE,
 		Title:       "파티원",
-		Description: "",
+		Description: "강남 파티원 가라오케에서는 화려한 분위기와 최상의 서비스로 당신의 밤을 뜨겁게 만들어 드립니다. 최고의 음향 시설과 환상적인 라이트 쇼로 최상의 파티 경험을 제공합니다.	",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -203,7 +203,7 @@ func initShirtRoom() {
 		},
 		Type:        STORE_TYPE_SHIRTROOM,
 		Title:       "유앤미",
-		Description: "",
+		Description: "강남 유앤미 셔츠룸은 고급스러운 인테리어와 프라이빗한 분위기에서 여러분을 맞이합니다. 세련된 셔츠 차림의 서비스로 특별한 밤을 보낼 수 있습니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -226,7 +226,7 @@ func initShirtRoom() {
 		},
 		Type:        STORE_TYPE_SHIRTROOM,
 		Title:       "씨엔엔",
-		Description: "",
+		Description: "강남 씨엔엔 셔츠룸에서는 독특한 테마와 함께 색다른 경험을 제공합니다. 친절한 서비스와 함께 기억에 남는 시간을 보내실 수 있습니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -252,7 +252,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "달토",
-		Description: "",
+		Description: "강남 달토 하이퍼블릭은 차별화된 음료와 함께 현대적인 분위기에서 즐길 수 있는 최고의 장소입니다. 도심 속에서 특별한 밤을 보내고 싶다면 이곳이 정답입니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -275,7 +275,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "런닝래빗",
-		Description: "",
+		Description: "강남 런닝래빗 하이퍼블릭은 독특한 콘셉트와 활기찬 분위기로 여러분의 밤을 즐겁게 만들어 줄 곳입니다. 친구들과 함께라면 더욱 즐거운 시간을 보낼 수 있습니다.	",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -298,7 +298,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "트렌드",
-		Description: "",
+		Description: "강남 트렌드 하이퍼블릭에서는 최신 유행을 선도하는 멋진 공간에서 독보적인 밤문화를 경험할 수 있습니다. 모던하고 스타일리시한 분위기가 여러분을 기다립니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -321,7 +321,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "사라있네",
-		Description: "",
+		Description: "강남 사라있네 하이퍼블릭은 이색적인 분위기와 함께 잊을 수 없는 밤을 선사합니다. 개성 넘치는 인테리어와 뛰어난 서비스로 당신의 밤을 특별하게 만들어 드립니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -344,7 +344,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "수목원",
-		Description: "",
+		Description: "강남 수목원 하이퍼블릭에서는 자연 속 휴식 같은 평온함과 함께 활기를 느낄 수 있습니다. 도심 속 오아시스에서 특별한 시간을 보내보세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -367,7 +367,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "퍼펙트",
-		Description: "",
+		Description: "강남 퍼펙트 하이퍼블릭은 완벽한 밤을 위한 최적의 장소입니다. 고급스러운 분위기와 탁월한 서비스로 여러분의 기대를 충족시켜 드립니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -390,7 +390,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "워라벨",
-		Description: "",
+		Description: "강남 워라벨 하이퍼블릭은 일과 삶의 균형을 중요시하는 분들을 위한 이상적인 공간입니다. 일상에서 벗어나 재충전할 수 있는 편안하고 즐거운 분위기를 제공합니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -413,7 +413,7 @@ func initHighPublic() {
 		},
 		Type:        STORE_TYPE_HIGHPUBLIC,
 		Title:       "방탄",
-		Description: "",
+		Description: "강남 방탄 하이퍼블릭은 강인함과 활력이 넘치는 공간에서 역동적인 밤문화를 즐길 수 있는 곳입니다. 안전하고 활기찬 분위기에서 잊지 못할 경험을 할 수 있습니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -439,7 +439,7 @@ func initLeggingsRoom() {
 		},
 		Type:        STORE_TYPE_LEGGINGS,
 		Title:       "하이킥",
-		Description: "",
+		Description: "강남 하이킥 레깅스룸에서는 스포티한 매력과 함께 활발한 밤을 보낼 수 있습니다. 역동적인 음악과 함께 색다른 레깅스룸 문화를 경험해 보세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -465,7 +465,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "유니크",
-		Description: "",
+		Description: "강남 유니크 쩜오는 그 이름처럼 독특하고 창의적인 분위기에서 여러분을 맞이합니다. 개성 넘치는 인테리어와 특별한 서비스로 당신만의 밤을 만들어 드립니다.	",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -488,7 +488,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "831",
-		Description: "",
+		Description: "강남 831 쩜오는 모던하고 세련된 디자인으로 고급스러운 밤문화의 새로운 기준을 제시합니다. 매력적인 공간에서 고급스러운 시간을 보낼 수 있습니다.	",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -511,7 +511,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "에이원",
-		Description: "",
+		Description: "강남 에이원 쩜오는 최상의 서비스와 함께 럭셔리한 경험을 제공하는 곳입니다. 고품격 분위기에서 까다로운 취향을 만족시킬 수 있는 프리미엄 장소입니다.	",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -534,7 +534,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "미라클",
-		Description: "",
+		Description: "강남 미라클 쩜오에서는 매일이 기적 같은 밤을 선사합니다. 환상적인 분위기와 함께 최상의 서비스로 당신의 밤을 더욱 빛나게 만들어 드립니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -557,7 +557,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "오키도키",
-		Description: "",
+		Description: "강남 오키도키 쩜오는 즐거움이 가득한 곳으로, 긍정적인 에너지와 함께 잊을 수 없는 시간을 보낼 수 있습니다. 밝고 활기찬 분위기에서 특별한 밤을 경험하세요.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -580,7 +580,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "인트로",
-		Description: "",
+		Description: "강남 인트로 쩜오는 새로운 시작을 알리는 곳입니다. 독특한 컨셉과 멋진 인테리어로 첫인상부터 강렬한 인상을 남깁니다. 새로운 만남과 경험을 원한다면 이곳이 정답입니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -603,7 +603,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "머니볼",
-		Description: "",
+		Description: "강남 머니볼 쩜오는 성공과 번영의 상징처럼, 여러분의 밤을 화려하게 장식해 줄 곳입니다. 고급스러움과 함께 독특한 경험을 선사하여 당신의 밤을 더욱 특별하게 만들어 줍니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -626,7 +626,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "라이징",
-		Description: "",
+		Description: "강남 라이징 쩜오는 계속해서 상승하는 분위기 속에서 끝없는 즐거움을 제공합니다. 역동적이고 짜릿한 경험을 통해 여러분의 밤을 더욱 열정적으로 만들어 드립니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -649,7 +649,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "임팩트",
-		Description: "",
+		Description: "강남 임팩트 쩜오에서는 강렬한 인상을 남기는 밤을 경험할 수 있습니다. 독특한 컨셉과 역동적인 분위기로 방문하는 모든 이에게 잊지 못할 추억을 선사합니다.	",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -672,7 +672,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "스테이",
-		Description: "",
+		Description: "강남 스테이 쩜오는 여러분이 머무르고 싶어 할 만큼 매력적인 곳입니다. 편안하면서도 세련된 분위기에서 최상의 서비스를 제공하여, 여러분의 밤을 완벽하게 만들어 드립니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -695,7 +695,7 @@ func initDot5() {
 		},
 		Type:        STORE_TYPE_DOT5,
 		Title:       "킹스맨",
-		Description: "",
+		Description: "강남 킹스맨 쩜오는 고급스러움과 우아함이 어우러진 곳으로, 군더더기 없는 세련된 서비스로 귀하를 맞이합니다. 진정한 왕처럼 특별한 대우를 받을 수 있는 장소입니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -721,7 +721,7 @@ func initClub() {
 		},
 		Type:        STORE_TYPE_CLUB,
 		Title:       "사운드",
-		Description: "",
+		Description: "강남 사운드 클럽에서는 최고의 사운드 시스템과 함께 역동적인 밤을 즐길 수 있습니다. 최신 트렌드의 음악과 함께 활기찬 파티를 경험하세요.	",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -744,7 +744,7 @@ func initClub() {
 		},
 		Type:        STORE_TYPE_CLUB,
 		Title:       "레이스",
-		Description: "",
+		Description: "강남 레이스 클럽은 스피드와 열정이 넘치는 곳으로, 빠르게 변화하는 트렌드를 따라잡을 수 있는 최적의 장소입니다. 역동적인 분위기에서 즐거운 시간을 보낼 수 있습니다.	",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -770,7 +770,7 @@ func initHobba() {
 		},
 		Type:        STORE_TYPE_HOBBA,
 		Title:       "어게인",
-		Description: "",
+		Description: "강남 어게인 호빠는 한 번 더 찾고 싶어지는 매력적인 곳입니다. 친근하고 활기찬 분위기 속에서 즐거운 대화와 함께 즐길 수 있는 장소로, 재방문을 유도하는 매력이 있습니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -796,7 +796,7 @@ func initFull() {
 		},
 		Type:        STORE_TYPE_FULL,
 		Title:       "세븐",
-		Description: "",
+		Description: "강남 세븐 풀싸롱에서는 럭셔리한 분위기와 함께 일곱 가지의 특별한 경험을 제공합니다. 고급스러운 인테리어와 최상의 서비스로 당신의 밤을 빛내 줄 것입니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -819,7 +819,7 @@ func initFull() {
 		},
 		Type:        STORE_TYPE_FULL,
 		Title:       "심포니",
-		Description: "",
+		Description: "강남 심포니 풀싸롱은 우아하고 고급스러운 음악처럼 여러분의 밤을 아름답게 장식해 줄 곳입니다. 조화로운 분위기와 함께 환상적인 시간을 보낼 수 있습니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
@@ -842,7 +842,7 @@ func initFull() {
 		},
 		Type:        STORE_TYPE_FULL,
 		Title:       "애플",
-		Description: "",
+		Description: "강남 애플 풀싸롱은 신선하고 활기찬 분위기로 여러분을 맞이합니다. 새로움과 재미가 가득한 곳에서 높은 퀄리티의 서비스와 함께 즐거운 밤을 보낼 수 있습니다.",
 		Active: &Active{
 			IsPermanentClosed: false,
 			Reason:            "",
