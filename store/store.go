@@ -708,6 +708,29 @@ func initDot5() {
 		DatePublished: storeDate(2024, 1, 18),
 		DateModified:  storeDate(2024, 1, 18),
 	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "논현동",
+			Address:      "248-7 임페리얼팰리스호텔 지하",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.741047626004!2d127.03369181564705!3d37.51402523489071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3f415b07255%3A0x2162a0d614d3c110!2s640%20Eonju-ro%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1678605759071!5m2!1sen!2skr",
+		},
+		Type:        STORE_TYPE_DOT5,
+		Title:       "더글로리",
+		Description: "강남 더글로리 쩜오에서는 최고의 럭셔리와 프리미엄 서비스를 경험할 수 있습니다. 세련된 분위기와 맞춤형 서비스로 모든 순간을 특별하게 만들어줍니다. 강남에서의 완벽한 선택입니다.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "05:00"},
+			Part2: &TimeType{Has: false},
+		},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
+		DatePublished: storeDate(2024, 3, 23),
+		DateModified:  storeDate(2024, 3, 23),
+	})
 }
 
 func initClub() {
