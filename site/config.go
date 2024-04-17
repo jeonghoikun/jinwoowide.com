@@ -44,7 +44,7 @@ func Init() {
 	c.DatePublished = date(2024, 3, 11)
 	c.DateModified = date(2024, 3, 11)
 	// 업종마다 전화번호가 다른경우 store/store.go 파일의 setPhoneNumber 함수에서 하드코딩
-	c.PhoneNumber = "010-7970-9057"
+	c.PhoneNumber = "010-8022-2946"
 	c.SearchEngineConnection = &searchEngineConnection{
 		Google: "enN9fKcTC1bJSBvnPGNO9zoa9v0S3Q_ZvdBd41Pv6x4",
 	}
