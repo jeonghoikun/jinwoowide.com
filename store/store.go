@@ -179,8 +179,8 @@ func initKaraoke() {
 		Title:       "파티원",
 		Description: "강남 파티원 가라오케에서는 화려한 분위기와 최상의 서비스로 당신의 밤을 뜨겁게 만들어 드립니다. 최고의 음향 시설과 환상적인 라이트 쇼로 최상의 파티 경험을 제공합니다.	",
 		Active: &Active{
-			IsPermanentClosed: false,
-			Reason:            "",
+			IsPermanentClosed: true,
+			Reason:            "정상폐업",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
