@@ -175,8 +175,8 @@ func initKaraoke() {
 			Address:      "142-35",
 			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1043050533926!2d127.05085469999999!3d37.505458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca411d5a288d7%3A0xca6681460caa4840!2s411%20Teheran-ro%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1662046616801!5m2!1sen!2skr",
 		},
-		Type:  STORE_TYPE_KARAOKE,
-		Title: "파티원",
+		Type:        STORE_TYPE_KARAOKE,
+		Title:       "파티원",
 		Description: "강남 파티원 가라오케에서는 화려한 분위기와 최상의 서비스로 당신의 밤을 뜨겁게 만들어 드립니다. 최고의 음향 시설과 환상적인 라이트 쇼로 최상의 파티 경험을 제공합니다.	",
 		Active: &Active{
 			IsPermanentClosed: true,
@@ -205,8 +205,8 @@ func initShirtRoom() {
 		Title:       "유앤미",
 		Description: "강남 유앤미 셔츠룸은 고급스러운 인테리어와 프라이빗한 분위기에서 여러분을 맞이합니다. 세련된 셔츠 차림의 서비스로 특별한 밤을 보낼 수 있습니다.",
 		Active: &Active{
-			IsPermanentClosed: false,
-			Reason:            "",
+			IsPermanentClosed: true,
+			Reason:            "하이퍼블릭으로 업종 변경",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
@@ -214,7 +214,7 @@ func initShirtRoom() {
 		},
 		Menu:          &Menu{Part1Whisky: 160000, Part2Whisky: 130000, TC: 120000, RT: 50000},
 		DatePublished: storeDate(2024, 1, 10),
-		DateModified:  storeDate(2024, 1, 10),
+		DateModified:  storeDate(2024, 6, 4),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -273,8 +273,8 @@ func initHighPublic() {
 			Address:      "604-7",
 			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.088372324827!2d127.0311099!3d37.5058338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3fb63865cd7%3A0x31427b556da83644!2s604-7%20Yeoksam-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1662056274810!5m2!1sen!2skr",
 		},
-		Type:  STORE_TYPE_HIGHPUBLIC,
-		Title: "런닝래빗",
+		Type:        STORE_TYPE_HIGHPUBLIC,
+		Title:       "런닝래빗",
 		Description: "강남 런닝래빗 하이퍼블릭은 독특한 콘셉트와 활기찬 분위기로 여러분의 밤을 즐겁게 만들어 줄 곳입니다. 친구들과 함께라면 더욱 즐거운 시간을 보낼 수 있습니다.	",
 		Active: &Active{
 			IsPermanentClosed: false,
@@ -426,6 +426,29 @@ func initHighPublic() {
 		DatePublished: storeDate(2024, 1, 14),
 		DateModified:  storeDate(2024, 1, 14),
 	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "잠원동",
+			Address:      "18-9",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.7060647283693!2d127.0171104!3d37.514850200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3dd364c8bc7%3A0x3ab4d058c71d79a8!2s18-9%20Jamwon-dong%2C%20Seocho-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1670862647642!5m2!1sen!2skr",
+		},
+		Type:        STORE_TYPE_HIGHPUBLIC,
+		Title:       "유앤미",
+		Description: "강남 유앤미 하이퍼블릭은 고급스러운 인테리어와 최신 음향 시스템을 갖춘 유흥 명소입니다. 다양한 엔터테인먼트와 프리미엄 음료로 특별한 밤을 만들어보세요. 지금 예약하세요!",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 140000, TC: 110000, RT: 50000},
+		DatePublished: storeDate(2024, 6, 4),
+		DateModified:  storeDate(2024, 6, 4),
+	})
 }
 
 func initLeggingsRoom() {
@@ -463,8 +486,8 @@ func initDot5() {
 			Address:      "204-4",
 			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.069981650343!2d127.02487893188555!3d37.50626757076464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3fb554ff02b%3A0x8d9e573a46ec1b7a!2s204-4%20Nonhyeon-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1679716196560!5m2!1sen!2skr",
 		},
-		Type:  STORE_TYPE_DOT5,
-		Title: "유니크",
+		Type:        STORE_TYPE_DOT5,
+		Title:       "유니크",
 		Description: "강남 유니크 쩜오는 그 이름처럼 독특하고 창의적인 분위기에서 여러분을 맞이합니다. 개성 넘치는 인테리어와 특별한 서비스로 당신만의 밤을 만들어 드립니다.	",
 		Active: &Active{
 			IsPermanentClosed: false,
@@ -486,8 +509,8 @@ func initDot5() {
 			Address:      "831",
 			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.5641798788934!2d127.0297203!3d37.4946097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1508715f00d%3A0xf4d079a0f225c1b1!2s831%20Yeoksam-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1679397724056!5m2!1sen!2skr",
 		},
-		Type:  STORE_TYPE_DOT5,
-		Title: "831",
+		Type:        STORE_TYPE_DOT5,
+		Title:       "831",
 		Description: "강남 831 쩜오는 모던하고 세련된 디자인으로 고급스러운 밤문화의 새로운 기준을 제시합니다. 매력적인 공간에서 고급스러운 시간을 보낼 수 있습니다.	",
 		Active: &Active{
 			IsPermanentClosed: false,
@@ -509,8 +532,8 @@ func initDot5() {
 			Address:      "735-32",
 			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3760308056935!2d127.0341289!3d37.4990484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1560e5d6327%3A0x5c114aeb8260a643!2s735-32%20Yeoksam-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1679397562888!5m2!1sen!2skr",
 		},
-		Type:  STORE_TYPE_DOT5,
-		Title: "에이원",
+		Type:        STORE_TYPE_DOT5,
+		Title:       "에이원",
 		Description: "강남 에이원 쩜오는 최상의 서비스와 함께 럭셔리한 경험을 제공하는 곳입니다. 고품격 분위기에서 까다로운 취향을 만족시킬 수 있는 프리미엄 장소입니다.	",
 		Active: &Active{
 			IsPermanentClosed: false,
@@ -647,8 +670,8 @@ func initDot5() {
 			Address:      "736-17",
 			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3715755621406!2d127.03453809999999!3d37.4991535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca15607cff005%3A0x9a314c8436603f9e!2s736-17%20Yeoksam-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1677802895674!5m2!1sen!2skr",
 		},
-		Type:  STORE_TYPE_DOT5,
-		Title: "임팩트",
+		Type:        STORE_TYPE_DOT5,
+		Title:       "임팩트",
 		Description: "강남 임팩트 쩜오에서는 강렬한 인상을 남기는 밤을 경험할 수 있습니다. 독특한 컨셉과 역동적인 분위기로 방문하는 모든 이에게 잊지 못할 추억을 선사합니다.	",
 		Active: &Active{
 			IsPermanentClosed: false,
@@ -788,8 +811,8 @@ func initClub() {
 			Address:      "114",
 			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.64159846425!2d127.02127!3d37.5163704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3e9a9f07727%3A0x4fcde2f83452e564!2s114%20Dosan-daero%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1681189780772!5m2!1sen!2skr",
 		},
-		Type:  STORE_TYPE_CLUB,
-		Title: "사운드",
+		Type:        STORE_TYPE_CLUB,
+		Title:       "사운드",
 		Description: "강남 사운드 클럽에서는 최고의 사운드 시스템과 함께 역동적인 밤을 즐길 수 있습니다. 최신 트렌드의 음악과 함께 활기찬 파티를 경험하세요.	",
 		Active: &Active{
 			IsPermanentClosed: false,
@@ -811,8 +834,8 @@ func initClub() {
 			Address:      "21-3",
 			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.6962477822185!2d127.0192326!3d37.51508169999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3e80fe94731%3A0xadedf946e74c560c!2s21-3%20Jamwon-dong%2C%20Seocho-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1681189358457!5m2!1sen!2skr",
 		},
-		Type:  STORE_TYPE_CLUB,
-		Title: "레이스",
+		Type:        STORE_TYPE_CLUB,
+		Title:       "레이스",
 		Description: "강남 레이스 클럽은 스피드와 열정이 넘치는 곳으로, 빠르게 변화하는 트렌드를 따라잡을 수 있는 최적의 장소입니다. 역동적인 분위기에서 즐거운 시간을 보낼 수 있습니다.	",
 		Active: &Active{
 			IsPermanentClosed: false,
