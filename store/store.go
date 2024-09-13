@@ -513,8 +513,8 @@ func initDot5() {
 		Title:       "831",
 		Description: "강남 831 쩜오는 모던하고 세련된 디자인으로 고급스러운 밤문화의 새로운 기준을 제시합니다. 매력적인 공간에서 고급스러운 시간을 보낼 수 있습니다.	",
 		Active: &Active{
-			IsPermanentClosed: false,
-			Reason:            "",
+			IsPermanentClosed: true,
+			Reason:            "썸데이로 상호 변경",
 		},
 		Hour: &Hour{
 			Part1: &TimeType{Has: true, Open: "18:00", Closed: "05:00"},
@@ -522,7 +522,7 @@ func initDot5() {
 		},
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2024, 1, 15),
-		DateModified:  storeDate(2024, 1, 15),
+		DateModified:  storeDate(2024, 9, 13),
 	})
 	stores = append(stores, &Store{
 		Location: &Location{
@@ -799,6 +799,29 @@ func initDot5() {
 		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
 		DatePublished: storeDate(2024, 4, 27),
 		DateModified:  storeDate(2024, 4, 27),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "역삼동",
+			Address:      "831",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.5641798788934!2d127.0297203!3d37.4946097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1508715f00d%3A0xf4d079a0f225c1b1!2s831%20Yeoksam-dong%2C%20Gangnam-gu%2C%20Seoul!5e0!3m2!1sen!2skr!4v1679397724056!5m2!1sen!2skr",
+		},
+		Type:        STORE_TYPE_DOT5,
+		Title:       "썸데이",
+		Description: "강남 썸데이 쩜오는 고급스러운 인테리어와 세련된 분위기 속에서 다양한 프리미엄 음료를 제공하는 유흥주점입니다. 전문 바텐더가 선보이는 독창적인 칵테일과 주류는 고객의 취향을 만족시키며, 프라이빗한 공간에서 편안하고 특별한 시간을 보낼 수 있습니다. 강남의 밤을 더욱 빛나게 할 특별한 경험을 원하는 이들에게 최적의 장소입니다.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "05:00"},
+			Part2: &TimeType{Has: false},
+		},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
+		DatePublished: storeDate(2024, 9, 13),
+		DateModified:  storeDate(2024, 9, 13),
 	})
 }
 
