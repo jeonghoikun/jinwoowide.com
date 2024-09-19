@@ -823,6 +823,29 @@ func initDot5() {
 		DatePublished: storeDate(2024, 9, 13),
 		DateModified:  storeDate(2024, 9, 13),
 	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "역삼동",
+			Address:      "822-5",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.382601316711!2d127.02926819999999!3d37.4988934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca12beca82d19%3A0x4b3e9f0c4b86c529!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsl63sgrzrj5kgODIyLTU!5e0!3m2!1sko!2skr!4v1726764978616!5m2!1sko!2skr",
+		},
+		Type:        STORE_TYPE_DOT5,
+		Title:       "블렌딩",
+		Description: "강남 블렌딩 쩜오는 고급스러운 인테리어와 트렌디한 분위기 속에서 다양한 프리미엄 칵테일과 주류를 제공하는 유흥주점입니다. 전문 바텐더가 선보이는 독창적인 음료와 맞춤형 서비스는 고객에게 특별한 경험을 선사하며, 프라이빗한 공간에서 편안하고 여유로운 시간을 보낼 수 있는 최적의 장소입니다.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "05:00"},
+			Part2: &TimeType{Has: false},
+		},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 0},
+		DatePublished: storeDate(2024, 9, 20),
+		DateModified:  storeDate(2024, 9, 20),
+	})
 }
 
 func initClub() {
