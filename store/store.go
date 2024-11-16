@@ -449,6 +449,52 @@ func initHighPublic() {
 		DatePublished: storeDate(2024, 6, 4),
 		DateModified:  storeDate(2024, 6, 4),
 	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "삼성동",
+			Address:      "142-36",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.095821464737!2d127.05071190000001!3d37.5056581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca40e2a1eee47%3A0xf795d5f2359e0b27!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsgrzshLHrj5kgMTQyLTM2!5e0!3m2!1sko!2skr!4v1731661224197!5m2!1sko!2skr",
+		},
+		Type:        STORE_TYPE_HIGHPUBLIC,
+		Title:       "리조트",
+		Description: "강남 리조트 하이퍼블릭에서 강남의 밤을 완전히 새로운 방식으로 즐겨보세요. 독특한 디자인과 세련된 분위기 속에서 특별한 경험이 기다립니다.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 170000, Part2Whisky: 150000, TC: 120000, RT: 50000},
+		DatePublished: storeDate(2024, 11, 16),
+		DateModified:  storeDate(2024, 11, 16),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "테헤란로",
+			Address:      "115",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.374866256944!2d127.02730681191143!3d37.49907587193956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca157786af0e5%3A0x95aa4c325f8185f5!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDthYztl6TrnoDroZwgMTE1!5e0!3m2!1sko!2skr!4v1731661475911!5m2!1sko!2skr",
+		},
+		Type:        STORE_TYPE_HIGHPUBLIC,
+		Title:       "115",
+		Description: "강남 115 하이퍼블릭에서 강남의 밤을 한층 더 특별하게 만들어 보세요. 세련된 공간과 최고급 서비스로 잊지 못할 시간을 선사합니다.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "01:00"},
+			Part2: &TimeType{Has: true, Open: "01:00", Closed: "15:00"},
+		},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 50000},
+		DatePublished: storeDate(2024, 11, 16),
+		DateModified:  storeDate(2024, 11, 16),
+	})
 }
 
 func initLeggingsRoom() {
@@ -920,6 +966,29 @@ func initHobba() {
 		Menu:          &Menu{Part1Whisky: 180000, Part2Whisky: 0, TC: 60000, RT: 50000},
 		DatePublished: storeDate(2024, 1, 20),
 		DateModified:  storeDate(2024, 1, 20),
+	})
+	stores = append(stores, &Store{
+		Location: &Location{
+			Do:           "서울",
+			Si:           "강남구",
+			Dong:         "역삼동",
+			Address:      "832-7",
+			GoogleMapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4846.994696276218!2d127.0266818958297!3d37.49541706063392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1502738de7b%3A0x65a8ee648278baf2!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsl63sgrzrj5kgODMyLTc!5e0!3m2!1sko!2skr!4v1731661981569!5m2!1sko!2skr",
+		},
+		Type:        STORE_TYPE_HOBBA,
+		Title:       "플러팅",
+		Description: "강남 플러팅 호빠에서 강남의 밤을 새롭게 경험해보세요. 설렘과 활기가 넘치는 특별한 공간에서 새로운 만남과 즐거움을 만끽하세요.",
+		Active: &Active{
+			IsPermanentClosed: false,
+			Reason:            "",
+		},
+		Hour: &Hour{
+			Part1: &TimeType{Has: true, Open: "18:00", Closed: "15:00"},
+			Part2: &TimeType{Has: false},
+		},
+		Menu:          &Menu{Part1Whisky: 0, Part2Whisky: 0, TC: 0, RT: 50000},
+		DatePublished: storeDate(2024, 11, 16),
+		DateModified:  storeDate(2024, 11, 16),
 	})
 }
 
